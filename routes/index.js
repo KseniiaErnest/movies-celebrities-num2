@@ -7,10 +7,10 @@ router.get("/", (req, res, next) => {
 
 // Get celebrities.routes.js
 const celebritiesRoutes = require('./celebrities.routes');
-router.use('/celebrities-ver2', celebritiesRoutes);
+router.use('/celebrities', celebritiesRoutes);
 
 // Get movies.routes.js
 const moviesRoutes = require('./movies.routes');
-router.use('/movies-ver2', moviesRoutes);
+router.use('/movies', moviesRoutes);
 
 module.exports = router;

@@ -4,10 +4,10 @@ const Schema = mongoose.Schema;
 const celebrityNewSchema = new Schema({
   name: String,
   occupation: String,
-  image: String,
+  image: String
   // movies: [{type: mongoose.Types.ObjectId, ref: 'Movie'}]
 })
 
-const CelebrityVer2 = mongoose.model('Celebrity', celebrityNewSchema);
+const CelebrityVer2 = mongoose.model('CelebrityVer2', celebrityNewSchema);
 
 module.exports = CelebrityVer2;

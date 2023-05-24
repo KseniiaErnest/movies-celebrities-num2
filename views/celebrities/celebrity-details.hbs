@@ -1,0 +1,14 @@
+<div>
+<h2>{{theCeleb.name}}</h2>
+<br>
+<img src="{{theCeleb.image}}" alt="The photo of {{theCeleb.name}}" style="width: 300px">
+<br>
+<p>{{theCeleb.occupation}}</p>
+
+<br><br><br>
+
+<form action="/celebrities/delete/{{theCeleb._id}}" method="POST">
+<button>Delete</button>
+</form>
+<a href="/celebrities/{{theCeleb._id}}/edit"><button>Edit</button></a>
+</div>
